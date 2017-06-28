@@ -11,9 +11,9 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-//        manifestPlaceholders = [onesignal_app_id: "PUT YOUR ONESIGNAL APP ID HERE",
-//                                // Project number pulled from dashboard, local value is ignored.
-//                                onesignal_google_project_number: "REMOTE"]
+        manifestPlaceholders = [onesignal_app_id               : "1044b01f-55d6-4e7a-955b-641d790f796d",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "REMOTE"]
     }
     buildTypes {
         release {
@@ -28,9 +28,12 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
 
-    //compile 'com.onesignal:OneSignal:[3.5.3,4.0.0)'
+    //OneSignal
+    compile 'com.onesignal:OneSignal:[3.5.3,4.0.0)'
     testCompile 'junit:junit:4.12'
 }
+
